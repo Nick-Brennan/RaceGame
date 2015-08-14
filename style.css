@@ -1,0 +1,52 @@
+body{
+    background-color: azure
+}
+
+h1{
+    text-align: center;
+    font-family: sans-serif
+}
+
+#box{
+    text-align: center;
+}
+.container{
+    margin-top: 30px;
+    text-align: center;
+    background-color: aliceblue;
+}
+
+#player1-track {
+    background-color: lavender;
+    height: 500px;
+    width: 50px;
+    
+    display: inline-block;
+    text-align: center;
+}
+
+#player2-track{
+    background-color:aquamarine;
+    height: 500px;
+    width: 50px;
+    
+    margin-left: auto;
+    display: inline-block;
+    text-align: center;
+}
+
+.cell{
+    height:45px;
+    border: 1px solid green;
+    line-height: 45px;
+}
+
+img{
+    transform: scale(0.1);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    
+}
