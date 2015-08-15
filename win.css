@@ -1,0 +1,13 @@
+
+div{
+    width: 100px;
+    border: 2px solid black;
+    text-align: center;
+    background-color: rgba(63, 65, 191, 0.3);
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    margin-top: 250px
+}
