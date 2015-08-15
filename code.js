@@ -6,40 +6,35 @@ $(document).ready(function(){
     $(window).keypress(function(e) {
            
         var key = e.which;
-           //do stuff with "key" here...
-            //$('#message').text(key);
+            //Move grey player avatar
         if(key === 97){
-            //$('#message').text('"A" key pressed');
             $('#player1-track div').eq(gCell).text("");
             $('#player1-track div').eq(gCell + 1).text("X");
             checkForWinner();
             gCell++;
-        }
+        }   //Move green player avatar
         else if(key === 108){
-            //$('#message').text('"L" key pressed');
             $('#player2-track div').eq(bCell).text("");
             $('#player2-track div').eq(bCell + 1).text("X");
             checkForWinner();
             bCell++;
         }
-        if(gCell > 9 || bCell > 9){
-            return;
-        }       
             
    });
     
 });
 
+//Check last cells to see who reaches finish first. Redirect to "win" page.
 function checkForWinner(){
     if(($('#g10').text() === 'X') && ($('#b10').text() === "")){
         $('#message').text('Grey Racer Wins!');
-        window.location = 'greyWins.html'
-        return true;
+        window.location = 'greyWins.html';
+        return;
     } else if(($('#b10').text() === 'X') && ($('#g10').text() === "")){
         $('#message').text('Blue Racer Wins!');
-        window.location = 'greenWins.html'
-        return true;
+        window.location = 'greenWins.html';
+        return;
     } else {
-        return false;
+        return;
     }
 }
