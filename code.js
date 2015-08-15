@@ -1,11 +1,8 @@
 $(document).ready(function(){
+    
     var gCell = 0;
     var bCell = 0;
-    
-    var greenCar = '<img src="greenCar.png" alt="X">';
-    var greyCar = '<img src="greyCar.png" alt="X">';
      
-    
     $(window).keypress(function(e) {
            
         var key = e.which;
@@ -26,9 +23,8 @@ $(document).ready(function(){
             bCell++;
         }
         if(gCell > 9 || bCell > 9){
-        return;
-    }
-        
+            return;
+        }       
             
    });
     
@@ -47,9 +43,3 @@ function checkForWinner(){
         return false;
     }
 }
-//function buildArray(array,$obj){
-//    for(i = 0; i <10; i++){
-//        array.push($obj.eq(i));
-//    }
-//    return array;
-//}
