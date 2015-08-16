@@ -1,6 +1,6 @@
 # RaceGame
-#X-Racer#
-##Tap "A" to advance the grey player's X.
-##Tap "L" to advance the green player's X.
+#Sprite Racer#
+##Tap "A" to advance the grey player's sprite.
+##Tap "L" to advance the green player's sprite.
 
-### X-Racer RaceGame is a simple jQuery/HTML/CSS exercise for General Assembly Web Development Immersive
+### Sprite Racer RaceGame is a simple jQuery/HTML/CSS exercise for General Assembly Web Development Immersive
