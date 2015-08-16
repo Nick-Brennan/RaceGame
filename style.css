@@ -7,6 +7,14 @@ h1{
     font-family: sans-serif
 }
 
+img{
+    height: 45px;    
+}
+
+b{
+    border-top: 5px dotted rgba(5,5,5,0.7);
+}
+
 #box{
     text-align: center;
 }
@@ -37,16 +45,12 @@ h1{
 
 .cell{
     height:45px;
-    border: 1px solid green;
+    border: 1px solid rgba(63, 65, 191, 0.1);;
     line-height: 45px;
 }
 
-img{
-    transform: scale(0.1);
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-    
+.hidden{
+    display: none;
 }
+
+

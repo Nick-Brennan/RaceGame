@@ -1,9 +1,9 @@
 $(document).ready(function(){    
-    $('div').on("click", function(){
+    $('#button').on("click", function(){
         window.location = "index.html";
     });
     
-    $('div').hover(function(){
-        $('div').toggleClass('hover');
+    $('#button').hover(function(){
+        $('#button').toggleClass('hover');
     });
 });

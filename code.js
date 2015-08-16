@@ -8,14 +8,14 @@ $(document).ready(function(){
         var key = e.which;
             //Move grey player avatar
         if(key === 97){
-            $('#player1-track div').eq(gCell).text("");
-            $('#player1-track div').eq(gCell + 1).text("X");
+            $('#player1-track div img').eq(gCell).addClass("hidden");
+            $('#player1-track div img').eq(gCell + 1).removeClass("hidden");
             checkForWinner();
             gCell++;
         }   //Move green player avatar
         else if(key === 108){
-            $('#player2-track div').eq(bCell).text("");
-            $('#player2-track div').eq(bCell + 1).text("X");
+            $('#player2-track div img').eq(bCell).addClass("hidden");
+            $('#player2-track div img').eq(bCell + 1).removeClass("hidden");
             checkForWinner();
             bCell++;
         }
@@ -26,11 +26,11 @@ $(document).ready(function(){
 
 //Check last cells to see who reaches finish first. Redirect to "win" page.
 function checkForWinner(){
-    if(($('#g10').text() === 'X') && ($('#b10').text() === "")){
+    if(($('#g10 img').hasClass('hidden') === false) && ($('#b10 img').hasClass('hidden') === true)){
         $('#message').text('Grey Racer Wins!');
         window.location = 'greyWins.html';
         return;
-    } else if(($('#b10').text() === 'X') && ($('#g10').text() === "")){
+    } else if(($('#b10 img').hasClass('hidden') === false) && ($('#g10 img').hasClass('hidden') === true)){
         $('#message').text('Blue Racer Wins!');
         window.location = 'greenWins.html';
         return;
