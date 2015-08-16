@@ -27,11 +27,9 @@ $(document).ready(function(){
 //Check last cells to see who reaches finish first. Redirect to "win" page.
 function checkForWinner(){
     if(($('#g10 img').hasClass('hidden') === false) && ($('#b10 img').hasClass('hidden') === true)){
-        $('#message').text('Grey Racer Wins!');
         window.location = 'greyWins.html';
         return;
     } else if(($('#b10 img').hasClass('hidden') === false) && ($('#g10 img').hasClass('hidden') === true)){
-        $('#message').text('Blue Racer Wins!');
         window.location = 'greenWins.html';
         return;
     } else {
